@@ -1,0 +1,146 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.search-cart {
+  display: flex;
+  gap: 20px;
+}
+.search-cart input {
+  padding: 5px;
+}
+.search-cart button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: #333;
+}
+.search-cart .cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.main-content .shop-now-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  /* width: 100vw; */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.product-list {
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.product-list img {
+  width: 350px;
+  height: 350px;
+}
+.product-list .product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.product-list .product-price {
+  color: green;
+  font-size: 25px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+.product-list .product-description {
+  text-align: justify;
+  margin-bottom: 10px;
+
+  padding: 10px;
+}
+.product-description ul {
+  list-style: None;
+  padding-left: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.product-list .add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+.remove-from-cart-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+.success {
+  color: green;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.error {
+  color: red;
+  font-size: 18px;
+  margin-top: 10px;
+}

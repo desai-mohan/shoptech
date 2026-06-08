@@ -1,0 +1,211 @@
+/* .hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111827;
+  height: 90vh;
+  padding: 4rem;
+  gap: 2rem;
+}
+.hero-title {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 10rem;
+  padding: 0.3rem;
+  color: white;
+} */
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111827;
+  height: 90vh;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+/* Left Side */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  color: #fbbf24;
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+.hero-title {
+  color: #f9fafb;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.hero-title span {
+  color: #fbbf24;
+}
+
+.hero-subtitle {
+  color: #9ca3af;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+
+/* CTA Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-primary {
+  background-color: #fbbf24;
+  color: #111827;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #f59e0b;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #d1d5db;
+  padding: 12px 28px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
+/* Trust Badges */
+.hero-trust {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.trust-item svg {
+  color: #fbbf24;
+  font-size: 16px;
+}
+
+/* Right Side */
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.hero-glow-circle {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(251, 191, 36, 0.06);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-inner-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.hero-product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Floating Badges */
+.floating-price {
+  position: absolute;
+  /* top: 70px;
+  right: 60px; */
+  right: 0px;
+  bottom: 20px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: #f9fafb;
+  /* right: 120px;
+  position: absolute; */
+}
+
+.floating-price p {
+  /* position: absolute;
+  bottom: 70px;
+  left: 60px; */
+  margin: 0;
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.floating-price span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+.floating-rating {
+  position: absolute;
+  /* top: 100px; */
+  top: 50px;
+  left: 10px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: #f9fafb;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
