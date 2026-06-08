@@ -30,7 +30,7 @@ const FeaturedProducts = () => {
       price: 24999,
       originalPrice: 29999,
       rating: 4.7,
-      reviews: 890,
+      reviews: 8900,
       image: "/sony.png",
     },
     {
@@ -45,7 +45,7 @@ const FeaturedProducts = () => {
     },
   ];
   return (
-    <div className="featured-products">
+    <section className="featured-products">
       <h1>Our Collections's</h1>
       <div className="featured_all_button">
         <h2>Featured Products</h2>
@@ -53,10 +53,28 @@ const FeaturedProducts = () => {
           View All<span>→</span>
         </button>
       </div>
+      <div className="products">
+        <div>
+          <button>All</button>
+        </div>
+        <div>
+          <button>Phones</button>
+        </div>
+        <div>
+          <button>Laptops</button>
+        </div>
+        <div>
+          <button>HeadPhones</button>
+        </div>
+        <div>
+          <button>TVs</button>t
+        </div>
+      </div>
+
       <div className="products-card">
         <ProductCard products={products} />
       </div>
-    </div>
+    </section>
   );
 };
 
