@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import "./Featuredproduct.css";
+import { FaLaptop, FaMobileAlt, FaHeadphones, FaTv } from "react-icons/fa";
 const FeaturedProducts = () => {
   const products = [
     {
@@ -11,7 +12,7 @@ const FeaturedProducts = () => {
       originalPrice: 99999,
       rating: 4.8,
       reviews: 1200,
-      image: "/macbook.png",
+      image: <FaLaptop />,
     },
     {
       id: 2,
@@ -21,7 +22,7 @@ const FeaturedProducts = () => {
       originalPrice: 139999,
       rating: 4.9,
       reviews: 3400,
-      image: "/iphone.png",
+      image: <FaMobileAlt />,
     },
     {
       id: 3,
@@ -31,7 +32,7 @@ const FeaturedProducts = () => {
       originalPrice: 29999,
       rating: 4.7,
       reviews: 8900,
-      image: "/sony.png",
+      image: <FaHeadphones />,
     },
     {
       id: 4,
@@ -41,7 +42,7 @@ const FeaturedProducts = () => {
       originalPrice: 64999,
       rating: 4.6,
       reviews: 540,
-      image: "/samsung.png",
+      image: <FaTv />,
     },
   ];
   return (
