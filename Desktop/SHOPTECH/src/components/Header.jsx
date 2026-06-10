@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import { FaSearch, FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
+import { CartContext } from "../context/CartContext";
 const Header = () => {
-  const cartCount = 3; // Example cart count, you can replace it with dynamic data
+  // Example cart count, you can replace it with dynamic data
+  const { cart } = useContext(CartContext);
   return (
     <nav className="navbar">
       <div className="nav-logo">TechStore</div>
@@ -37,7 +39,7 @@ const Header = () => {
         {/* <FaHeart className="icon" /> */}
         <div className="cart-wrapper">
           <FaShoppingCart className="icon" />
-          <span className="badge">{cartCount}</span>
+          <span className="badge">{cart.length}</span>
         </div>
         <FaUser className="icon" title="User" />
       </div>
